@@ -3,12 +3,17 @@ body{
 }
 .sol{
     position: fixed;
+    color: black;
+    font-size: 50px;
     top: calc(50vh - 250px);
     left: -250px;
     background-color: yellow;
     width: 500px;
     height: 500px; 
     border-radius: 50%;
+    text-align: center;
+    line-height: 500px;
+    box-shadow: 0 0 3em white;
 }
 .mercurio{
     position: fixed;
@@ -27,12 +32,35 @@ body{
 @keyframes orbita_Mercurio {
 
     0% {
-        transform: rotate(0deg) translateY(37vw) rotate(0deg); 
+        transform: rotate(0deg) translateY(500px) rotate(0deg); 
       }
       100% {
-        transform: rotate(360deg) translateY(37vw) rotate(-360deg); 
+        transform: rotate(360deg) translateY(500px) rotate(-360deg); 
       }
 }
+.rastro{
+    position: fixed;
+    top: calc(50vh - 500px);
+    left: -500px;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    animation:rastro 2s linear infinite; 
+
+}
+@keyframes rastro {
+    
+    0% {
+        transform: rotate(130deg)  rotate(-0deg); 
+      }
+      100% {
+        transform: rotate(130deg)  rotate(360deg); 
+      }
+}
+
 .venus{
     position: fixed;
     top: calc(50vh - 45px);
@@ -59,7 +87,7 @@ body{
 .tierra{
     position: fixed;
     top: calc(50vh - 60px);
-    left: -60px;
+    left: 60px;
     background-color: aqua;
     width: 120px;
     height: 120px;
@@ -67,7 +95,7 @@ body{
     border-radius: 50%;
     text-align: center;
     line-height: 120px;
-    animation:orbita_Tierra 8s linear infinite; 
+    animation:orbita_Tierra 7s linear infinite; 
 }
 @keyframes orbita_Tierra {
 
@@ -76,5 +104,28 @@ body{
       }
       100% {
         transform: rotate(360deg) translateY(70vw) rotate(-360deg); 
+      }
+}
+.luna{
+    position: relative;
+    top: calc(-50% - 20px);
+    right: -40px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    animation:orbita_Luna 2s linear infinite; 
+
+}
+@keyframes orbita_Luna {
+
+    0% {
+        transform: rotate(0deg) translateY(10vw) rotate(0deg); 
+      }
+      100% {
+        transform: rotate(360deg) translateY(10vw) rotate(-360deg); 
       }
 }

@@ -1,0 +1,7 @@
+.imagen{
+    background-image: url("pez.jpg") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+
+}
