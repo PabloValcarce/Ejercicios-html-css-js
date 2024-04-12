@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h2>Formulario de Registro</h2>
+    <form action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required /><br/><br/>
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" required /><br/><br/>
+
+      <label for="tipo-via">Tipo de vía:</label>
+      <input type="text" id="tipo-via" name="tipo-via" required /><br/><br/>
+
+      <label for="nombre-via">Nombre de la vía:</label>
+      <input type="text"id="nombre-via"name="nombre-via"required/><br/><br/>
+
+      <label for="codigo-postal">Código Postal:</label>
+      <input type="text"id="codigo-postal"name="codigo-postal" required pattern="[0-9]{5}"/><br/><br/>
+
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" id="ciudad" name="ciudad" required /><br/><br/>
+
+      <label for="provincia">Provincia:</label>
+      <input type="text" id="provincia" name="provincia" required /><br/><br/>
+
+      <label for="pais">País:</label>
+      <select id="pais" name="pais" required>
+        <option value="España">España</option>
+        <option value="Francia">Francia</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Andorra">Andorra</option></select><br/><br/>
+
+      <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+      <input type="date"id="fecha-nacimiento"name="fecha-nacimiento" required/><br/><br/>
+
+      <label for="nota-media">Nota Media en la Universidad:</label>
+      <input type="number"id="nota-media" name="nota-media" min="0" max="10" step="0.01" required/><br/><br/>
+
+      <label for="telefono">Número de Teléfono:</label>
+      <input type="tel"  id="telefono"  name="telefono"  pattern="[0-9]{9}"  required/><br/><br/>
+
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required /><br /><br/>
+
+      <label for="contrasena">Contraseña:</label>
+      <input  type="password"  id="contrasena"  name="contrasena" required /><br /><br />
+
+      <label for="repetir-contrasena">Repetir Contraseña:</label>
+      <input  type="password"  id="repetir-contrasena"  name="repetir-contrasena" required /><br /><br />
+
+      <label for="tipo-cuenta">Tipo de Cuenta:</label>
+      <select  id="tipo-cuenta"  name="tipo-cuenta"  required  onchange="mostrarDescripcion()">
+        <option value="">Seleccionar</option>
+        <option value="gratuita">Gratuita</option>
+        <option value="basica">Básica</option>
+        <option value="premium">Premium</option></select><br/><br/>
+
+      <div id="descripcion-cuenta" style="display: none">
+        <label>Descripción:</label><br />
+        <textarea  id="descripcion"name="descripcion" rows="4" cols="50"  ></textarea><br/><br/>
+      </div>
+
+      <label for="sobre-mi">Sobre Mí:</label><br />
+      <textarea id="sobre-mi" name="sobre-mi" rows="4" cols="50"></textarea><br/><br/>
+
+      <label for="foto-perfil">Foto de Perfil:</label>
+      <input type="file" id="foto-perfil" name="foto-perfil"/><br/><br/>
+
+      <label for="cv">Subir CV:</label>
+      <input type="file" id="cv" name="cv"/><br/><br/>
+
+      <input type="submit" value="Registrarse" />
+    </form>
+
+    
+  </body>
+</html>
