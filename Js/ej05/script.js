@@ -13,7 +13,6 @@ function iniciarAlarma() {
   }, 1000);
 }
 
-
 function ring(){
 
     let pantalla = document.createElement("div");
@@ -35,7 +34,4 @@ function ring(){
         this.parentNode.removeChild(this);
         document.getElementById("contenido").innerHTML = "";
       });
-
 }
-
-

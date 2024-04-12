@@ -60,7 +60,6 @@ body{
         transform: rotate(130deg)  rotate(360deg); 
       }
 }
-
 .venus{
     position: fixed;
     top: calc(50vh - 45px);
@@ -83,7 +82,6 @@ body{
         transform: rotate(360deg) translateY(50vw) rotate(-360deg); 
       }
 }
-
 .tierra{
     position: fixed;
     top: calc(50vh - 60px);
